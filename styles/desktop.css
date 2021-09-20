@@ -1,0 +1,50 @@
+.font-md {
+  font-size: 20px;
+}
+
+.font-lr {
+  font-size: 30px;
+}
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.mb-section, .example__title, .news__title {
+  margin-bottom: 50px;
+}
+
+.flex {
+  flex-direction: row;
+}
+
+.header__nav {
+  display: block;
+}
+
+.main-image__text {
+  font-size: 40px;
+}
+
+.mobile-menu__btn {
+  display: none;
+}
+
+.news {
+  width: 60%;
+}
+.example__houses > img {
+  padding: 30px;
+}
+
+.footer__nav {
+  flex-flow: row-reverse;
+  margin-bottom: 40px;
+}
+.footer__nav > ul > li {
+  margin: 0 20px;
+}/*# sourceMappingURL=desktop.css.map */

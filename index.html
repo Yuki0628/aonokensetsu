@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蒼乃建設</title>
+    <meta name="description" content="This is a test site">
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="global-container">
+      <div id="container">
+
+        <!-- ↓モバイルメニュー表示時の薄い黒幕 -->
+        <div class="mobile-menu__cover"></div>
+        <header class="header">
+          <div class="header__inner">
+            <div class="logo">
+              <a href="#"><img src="images/header_logo.png" alt="" class="logo__img" /></a>
+            </div>
+            <!-- ↓パソコン画面でのみ表示するメニュー -->
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li"><a href="#1">お知らせ</a></li>
+                <li class="header__li"><a href="#2">施工事例</a></li>
+                <li class="header__li"><a href="#">お問い合わせ</a></li>
+              </ul>
+            </nav>
+            <!-- スマホ画面でのみ表示のハンバーガーメニュー -->
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+
+        <main>
+          <div class="main-image">
+            <p class="main-image__text">「街を作る」は未来を造る。</p>
+          </div>
+          <section class="news" id="1">
+            <h2 class="news__title">お知らせ</h2>
+            <ul class="news__ul">
+              <li class="news__li">
+                <p class="date">
+                  2021.09.01 <span class="news__appeal">お知らせ</span>
+                </p>
+                <p><a href="#">理想の建築.comに掲載されました。</a></p>
+              </li>
+              <li class="news__li">
+                <p class="date">
+                  2020.11.17 <span class="news__appeal">お知らせ</span>
+                </p>
+                <p><a href="#">本社打合せ室が完成しました。</a></p>
+              </li>
+              <li class="news__li">
+                <p class="date">
+                  2020.09.10 <span class="news__appeal">お知らせ</span>
+                </p>
+                <p><a href="#">本社ホームページがリニューアルしました。</a></p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="example" id="2">
+            <h2 class="example__title">施工事例</h2>
+            <div class="example__container">
+              <div class="example__houses">
+                <img src="images/building1.png" alt="" />
+                <p class="example__text">エフ氏の別荘</p>
+                <p>大阪府</p>
+                <div class="example__detail">
+                  <div class="border">
+                    <a href="#">詳細を見る</a>
+                  </div>
+                </div>
+              </div>
+              <div class="example__houses">
+                <img src="images/building2.png" alt="" />
+                <p class="example__text">X社東京オフィス</p>
+                <p>東京都</p>
+                <div class="example__detail">
+                  <div class="border">
+                    <a href="#">詳細を見る</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example__more">
+              <a href="#">
+                <div class="border"><p>施工実績一覧</p></div>
+              </a>
+            </div>
+          </section>
+
+          <section class="slides">
+            <div class="slides__container">
+              <div class="slides__item">
+                <a href=""><img src="images/company.png" alt="" /></a>
+              </div>
+              <div class="slides__item">
+                <a href=""><img src="images/recruit.png" alt="" /></a>
+              </div>
+              <div class="slides__item">
+                <a href=""><img src="images/contact.png" alt="" /></a>
+              </div>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="footer__inner">
+              <div class="footer__nav">
+                  <ul>
+                    <li><a href="#1">企業理念</a></li>
+                    <li><a href="#1">お知らせ</a></li>
+                    <li><a href="#2">施工事例</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                  </ul>
+                  <div class="footer__logo">
+                    <a href=""><img src="images/footer_logo.png" alt="" /></a>
+                  </div>
+              </div>
+              <p>Copyright © 2020-Aono Corporation.</p>
+            </div>
+          </footer>
+        </main>
+        
+      </div>
+
+      <!-- ↓ハンバーガーメニュー内の記述 -->
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#1">
+              <span class="main-title">News</span>
+              <span class="sub-title">お知らせ</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Our Vision</span>
+              <span class="sub-title">企業理念</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#2">
+              <span class="main-title">Our Portfolio</span>
+              <span class="sub-title">施工事例</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Contact Us</span>
+              <span class="sub-title">お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+
+    </div>
+
+    <script src="scripts/mobile-menu.js"></script>
+  </body>
+</html>

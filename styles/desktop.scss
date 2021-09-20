@@ -1,0 +1,81 @@
+/////////↓ベースのスタイルをここに記述(パソコンサイズ）↓/////////
+
+.font-md {
+  font-size: 20px;
+}
+.font-lr {
+  font-size: 30px
+}
+
+//フォントサイズの設定
+
+.mb-lg {
+  margin-bottom: 150px !important;
+}  
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.mb-section {
+  margin-bottom: 50px;
+}
+
+//余白のクラス
+
+.flex {
+  flex-direction: row;
+  // flex-wrap: wrap;
+}
+/////////↑ベースのスタイルをここに記述(パソコンサイズ）↑/////////
+
+
+.header {
+  &__nav {
+    display: block;
+    
+  }
+}
+
+.main-image {
+  &__text {
+    font-size: 40px;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+.news {
+  width: 60%;
+
+  &__title {
+    @extend .mb-section;
+  }
+}
+
+.example {
+
+  &__title {
+    @extend .mb-section;
+  }
+
+  &__houses {
+    & > img {
+      padding: 30px;
+    }
+  }
+}
+
+.footer {
+  &__nav {
+    flex-flow: row-reverse;
+    margin-bottom: 40px;
+
+    & > ul > li {
+      margin: 0 20px;
+    }
+  }
+}

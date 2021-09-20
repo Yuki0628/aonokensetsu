@@ -1,0 +1,208 @@
+@charset "UTF-8";
+.font-sm, .footer__inner > p, .news__li > .date {
+  font-size: 13px;
+}
+
+.font-md, .footer__nav > ul > li, .news {
+  font-size: 17px;
+}
+
+.font-lr, .example__text, .example__title, .news__title, .main-image__text {
+  font-size: 24px;
+}
+
+.mb-sm, .example__detail {
+  margin-bottom: 30px !important;
+}
+
+.mb-lg, .example__more, .news, .main-image {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width, .footer__inner, .example, .news, .header__inner {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+body {
+  font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "Yu Mincho Light", YuMincho, "Yu Mincho", 游明朝体, sans-serif;
+}
+
+.flex, .footer__nav > ul, .footer__nav, .slides__container, .example__container, .news__li {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(250, 250, 250, 0.7);
+}
+.header__nav {
+  display: none;
+}
+.header__nav > ul > li {
+  margin: 0 20px;
+}
+.header__nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+.header__nav > ul > li > a:hover {
+  opacity: 0.7;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header__inner > .logo > a > img {
+  width: 8em;
+}
+.header__ul {
+  display: flex;
+  list-style: none;
+}
+.header__li {
+  padding: 10px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/main.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news__title {
+  text-align: center;
+}
+.news__ul {
+  padding-left: 0;
+}
+.news__li {
+  border-bottom: solid black 1px;
+  margin: 20px 0;
+}
+.news__li > p > a {
+  list-style: none;
+  color: black;
+}
+.news__appeal {
+  font-size: 15px;
+  border: solid black 1px;
+  padding: 2px;
+  margin: 0 25px;
+}
+
+.example__title {
+  text-align: center;
+}
+.example__container {
+  width: 100%;
+  text-align: center;
+}
+.example__houses > img {
+  width: 100%;
+}
+.example__text {
+  margin: 30px 0;
+}
+.example__detail > .border {
+  margin: 0 auto;
+  padding: 10px;
+  width: 60%;
+  border-top: solid black 1.5px;
+  border-bottom: solid black 1.5px;
+}
+.example__detail > .border > a {
+  color: black;
+  text-decoration: none;
+}
+.example__detail > .border > a:hover {
+  opacity: 0.7;
+}
+.example__detail > .border > a::before {
+  content: "▷";
+}
+.example__more {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.example__more > a {
+  text-decoration: none;
+}
+.example__more > a > .border {
+  border: solid black 1px;
+  padding: 10px 40px;
+}
+.example__more > a > .border:hover {
+  opacity: 0.7;
+}
+.example__more > a > .border > p {
+  color: black;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.slides__container {
+  width: 100%;
+}
+.slides__item > a > img {
+  width: 100%;
+}
+.slides__item > a > img:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+}
+.footer__inner > p {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer__nav {
+  justify-content: space-between;
+  text-align: center;
+}
+.footer__nav > ul {
+  margin-top: 30px;
+  padding-left: 0;
+}
+.footer__nav > ul > li {
+  padding: 10px 0;
+  list-style: none;
+}
+.footer__nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+.footer__nav > ul > li > a:hover {
+  opacity: 0.7;
+}
+.footer__logo > a > img {
+  width: 7em;
+  margin: 20px 0;
+}/*# sourceMappingURL=base.css.map */
